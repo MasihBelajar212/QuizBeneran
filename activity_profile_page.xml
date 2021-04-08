@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" android:padding="40dp" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Profile Name" android:id="@+id/profileName" android:textStyle="bold" android:textSize="27sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Rp.X.000" android:id="@+id/profileWallet" android:textStyle="bold" android:textSize="27sp" android:layout_alignParentEnd="true"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Phone Number" android:id="@+id/profilePhone" android:textSize="20sp" android:layout_below="@+id/profileName"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Gender" android:id="@+id/profileGender" android:textSize="20sp" android:layout_below="@+id/profilePhone" android:layout_marginTop="20dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="DOB" android:id="@+id/profileDOB" android:textSize="20sp" android:layout_below="@+id/profileGender"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Top Up" android:id="@+id/textTopUp" android:textStyle="bold" android:textSize="25sp" android:layout_below="@+id/profileDOB" android:layout_marginTop="50dp" android:layout_centerHorizontal="true"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="10dp" android:id="@+id/radioGroupNominal" android:layout_below="@+id/textTopUp" android:layout_marginTop="20dp">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Rp.250.000" android:id="@+id/tambah250K" android:textSize="17sp"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Rp.500.000" android:id="@+id/tambah500K" android:textSize="17sp"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Rp.1.000.000" android:id="@+id/tambah1000K" android:textSize="17sp"/>
+
+</RadioGroup>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/topUpPassword" android:layout_below="@+id/radioGroupNominal" android:layout_marginTop="20dp" android:inputType="textPassword" android:hint="Password for Confirmation"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Top Up" android:id="@+id/btnTopUp" android:textSize="20sp" android:onClick="topUp" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

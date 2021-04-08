@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" android:padding="40dp" android:orientation="vertical" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAlignment="center" android:text="Registration" android:textColor="@color/title" android:textSize="40sp"/>
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="250dp" android:inputType="textPersonName" android:hint="Username" android:layout_marginTop="10dp" android:id="@+id/inputUsername"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="10dp" android:orientation="horizontal" android:layout_marginTop="10dp" android:id="@+id/inputGender">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Male" android:textSize="16sp" android:id="@+id/inputGenderMale"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Female" android:textSize="16sp" android:id="@+id/inputGenderFemale"/>
+
+</RadioGroup>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="250dp" android:hint="Date of Birth" android:layout_marginTop="10dp" android:id="@+id/inputDOB" android:focusableInTouchMode="false"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="250dp" android:inputType="phone" android:hint="Phone Number" android:layout_marginTop="10dp" android:id="@+id/inputPhone"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="250dp" android:inputType="textPassword" android:hint="Password" android:layout_marginTop="10dp" android:id="@+id/inputPassword"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="250dp" android:inputType="textPassword" android:hint="Confirm Password" android:layout_marginTop="10dp" android:id="@+id/inputConfirmPass"/>
+
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="I agree with the Term of Service" android:id="@+id/termAgree"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="250dp" android:text="Sign Up" android:layout_marginTop="20dp" android:onClick="signUp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="I already have an account" android:onClick="toLogin"/>
+
+</LinearLayout>
+
+</RelativeLayout>

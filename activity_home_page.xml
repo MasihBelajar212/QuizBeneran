@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:weightSum="10" android:orientation="vertical" android:gravity="center">
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:layout_weight="1" android:paddingRight="10dp" android:paddingLeft="10dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="User Greet" android:id="@+id/userGreetTV" android:textStyle="bold" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Wallet" android:id="@+id/walletTV" android:textSize="20sp" android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/recycleViewAlert" android:textSize="18sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="9" android:id="@+id/transactionRV"/>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAlignment="center" android:text="Login" android:layout_marginTop="40dp" android:textColor="@color/title" android:textSize="40sp"/>
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="200dp" android:inputType="textPersonName" android:hint="Username" android:layout_margin="5dp" android:id="@+id/inputUsername"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="200dp" android:inputType="textPassword" android:hint="Password" android:id="@+id/inputPassword"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="150dp" android:text="login" android:layout_marginTop="30dp" android:id="@+id/btnLogin" android:onClick="Login"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Register" android:layout_marginTop="4dp" android:textSize="15sp" android:onClick="toRegister"/>
+
+</LinearLayout>
+
+</RelativeLayout>

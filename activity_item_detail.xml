@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" android:padding="50sp" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:text="Product Name" android:id="@+id/productDetailName" android:textSize="40sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Player Min-Max" android:id="@+id/productDetailMinMaxPlayer" android:textSize="25sp" android:layout_below="@+id/productDetailName" android:layout_marginTop="150dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Product Price" android:id="@+id/productDetailPrice" android:textSize="25sp" android:layout_below="@+id/productDetailMinMaxPlayer" android:layout_marginTop="10dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Buy" android:id="@+id/btnBuy" android:textSize="20sp" android:onClick="buyItem" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
